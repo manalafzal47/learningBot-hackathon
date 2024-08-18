@@ -1,8 +1,12 @@
 import Image from "next/image";
 import HomePage from "./mainpage/page";
+import Chatbot from './chatbot/page';
 
-export default function Home() {
+function App() {
   return (
-<HomePage></HomePage>
+    <HomePage></HomePage>
   );
 }
+
+export default App;
+

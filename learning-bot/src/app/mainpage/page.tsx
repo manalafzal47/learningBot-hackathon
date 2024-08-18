@@ -1,100 +1,76 @@
+
 import React from "react";
+import Link from "next/link";
+
+
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col items-center">
+    <div className="min-h-screen bg-light-yellow text-dark-blue flex flex-col items-center inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem] font-skrapbook">
+      {/* Background Grid */}
+      <div className="absolute bg-light-yellow inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem]"></div>
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div></div>
       {/* Navigation Bar */}
-      <nav className="w-full flex justify-between items-center py-4 px-8 bg-black bg-opacity-50 fixed top-0">
-        <div className="text-2xl font-bold">JAMS</div>
-      </nav>
+      <div className="text-2xl font-skrapbook font-bold text-yellow mt-4">Talkaroo</div>
 
       {/* Hero Section */}
-      <header className="flex flex-col justify-center items-center text-center h-screen px-4">
-        <h1 className="text-6xl font-extrabold mb-6 animate-fadeIn">
-          Converse with Your AI-Powered Voice Assistant
+      <header className=" flex flex-col justify-center items-center text-center h-screen px-4">
+      <img src="/talkaroo.gif" alt="Talkaroo" className="w-64 h-64 mb-6" />
+        <h1 className="text-6xl text-yellow font-extrabold mb-6 animate-fadeIn">
+        🦘 Hi! I'm Talkaroo! 🦘   
         </h1>
         <p className="text-lg mb-8 max-w-2xl mx-auto animate-fadeIn delay-2s">
-          Engage in seamless, lifelike conversations with JAMS, your AI companion. Speak naturally and let the AI understand and respond in real-time.
+          I can speak many different languages 😄 Do you wanna to know many languages too? 
         </p>
-        <button className="bg-purple-600 hover:bg-purple-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
-          Start Talking
-        </button>
+        <Link href="/chatbot">
+            <button className=" hover-gradient text-whitey font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
+                Let's Chat 💙
+            </button>
+        </Link>
       </header>
 
-      {/* Features Section */}
-      <section className="mt-20 px-4 lg:px-0 max-w-5xl text-center">
-        <h2 className="text-4xl font-semibold mb-12 animate-fadeIn">Why Choose JAMS?</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 animate-fadeIn delay-4s">
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <h3 className="text-2xl font-bold mb-4">Natural Conversation</h3>
-            <p>
-              Experience smooth, human-like conversations with our advanced AI that understands and responds to your voice in real-time.
-            </p>
-          </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <h3 className="text-2xl font-bold mb-4">Multi-Language Interaction</h3>
-            <p>
-              Converse in multiple languages and let JAMS adapt to your preferred language effortlessly.
-            </p>
-          </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <h3 className="text-2xl font-bold mb-4">Smart Context Awareness</h3>
-            <p>
-              JAMS remembers the context of your conversation, allowing for a more personalized and relevant interaction.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* How It Works Section */}
+      {/* How I Work */}
       <section className="mt-32 px-4 lg:px-0 max-w-5xl text-center">
-        <h2 className="text-4xl font-semibold mb-12 animate-fadeIn delay-6s">How It Works</h2>
+      <div className="absolute bg-light-yellow inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:8rem_4rem]"></div>
+
+        <h2 className="text-4xl font-semibold mb-12 animate-fadeIn delay-6s text-dark-blue">Here's what I can do 🤓</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 animate-fadeIn delay-7s text-left">
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <h3 className="text-2xl font-bold mb-4">1. Start Speaking</h3>
-            <p>Press the talk button and speak to JAMS. The AI listens and processes your input instantly.</p>
+          <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
+            <h3 className="text-2xl font-bold mb-4">1. Talk to me</h3>
+            <p>Press the talk button and speak to me. I can Listen.</p>
           </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <h3 className="text-2xl font-bold mb-4">2. Real-Time Response</h3>
-            <p>JAMS analyzes your speech and responds in real-time, creating a natural conversation flow.</p>
+          <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
+            <h3 className="text-2xl font-bold mb-4">2. I'll Talk Back</h3>
+            <p>Talkaroo analyzes your speech and responds in real-time, creating a natural conversation flow.</p>
           </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <h3 className="text-2xl font-bold mb-4">3. Continuous Learning</h3>
-            <p>JAMS improves with every interaction, learning from your preferences to provide even better responses over time.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="mt-32 px-4 lg:px-0 max-w-5xl text-center">
-        <h2 className="text-4xl font-semibold mb-12 animate-fadeIn delay-8s">What Our Users Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 animate-fadeIn delay-9s">
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <p className="text-lg mb-4">"JAMS has transformed the way I interact with technology. The conversations feel so real!"</p>
-            <p className="font-semibold">- Alex Johnson</p>
-          </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-            <p className="text-lg mb-4">"The ability to switch between languages seamlessly is a game-changer for my global team."</p>
-            <p className="font-semibold">- Maria Gonzalez</p>
+          <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
+            <h3 className="text-2xl font-bold mb-4">3. Let Me Get To Know You Better</h3>
+            <p>The more you talk to me, the more I get to know you, making learning funner and funner every day!</p>
           </div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      {/* CTA */}
       <section className="mt-32 mb-32 px-4 lg:px-0 max-w-5xl text-center">
-        <h2 className="text-4xl font-semibold mb-12 animate-fadeIn delay-10s">Ready to Start Talking?</h2>
-        <p className="text-lg mb-8 animate-fadeIn delay-11s">
-          Engage in a lifelike conversation with JAMS today. Experience the future of voice interaction.
+        <h2 className="text-4xl font-semibold mb-12 animate-fadeIn delay-10s text-dark-blue">Can't wait to talk to you 😄</h2>
+        <p className="text-lg mb-8 animate-fadeIn delay-11s text-dark-blue">
+          What are you waiting for, talk to me pleaseee pretty pleasee
         </p>
-        <button className="bg-purple-600 hover:bg-purple-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-12s">
-          Try It Now
+        <Link href="/chatbot">
+        <button className=" hover-gradient text-whitey font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 animate-fadeIn delay-3s">
+          Start Talking 💬
         </button>
+        </Link>
+
+
       </section>
 
       {/* Footer */}
-      <footer className="w-full py-8 bg-gray-900 text-center text-white animate-fadeIn delay-13s">
+      <footer className="w-full py-8 bg-yellow text-center text-light-yellow animate-fadeIn delay-13s">
         <p className="text-sm">
-          © 2024 JAMS. All rights reserved.
+          © 2024 Talkaroo. All rights reserved.
         </p>
       </footer>
     </div>
