@@ -68,23 +68,23 @@ const Chatbot = () => {
             </header>
 
             {/* How It Works Section */}
-            <section className="mb-20 mt-10 px-4 lg:px-0 max-w-5xl text-center">
+            {/* <section className="mb-20 mt-10 px-4 lg:px-0 max-w-5xl text-center">
                 <h2 className="text-4xl font-semibold mb-12 text-dark-blue">How I Work</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
                     <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
                         <h3 className="text-2xl font-bold mb-4">1. Record Your Voice</h3>
-                        <p>Press the record button and speak. I'll listen attentively.</p>
+                        <p>Press the record button and speak. I&aposll listen attentively.</p>
                     </div>
                     <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
                         <h3 className="text-2xl font-bold mb-4">2. Real-Time Responses</h3>
-                        <p>I'll analyze your speech and respond instantly for a smooth conversation.</p>
+                        <p>I&aposll analyze your speech and respond instantly for a smooth conversation.</p>
                     </div>
                     <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
                         <h3 className="text-2xl font-bold mb-4">3. Personalization</h3>
                         <p>The more you talk to me, the better I understand you, making our chats more personalized!</p>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Footer */}
             <footer className="w-full py-8 bg-yellow text-center text-light-yellow">
