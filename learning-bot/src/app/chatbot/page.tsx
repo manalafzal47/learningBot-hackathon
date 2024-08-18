@@ -49,6 +49,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone, faStop } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
+
 // import synthesizeSpeech from '../../utils/synthesizeSpeech'; // Adjust the import path as needed
 
 const Chatbot = () => {
@@ -89,10 +91,10 @@ const Chatbot = () => {
             {/* Chatbot Face Section */}
             <header className="flex flex-col justify-start items-center text-center h-screen px-4 pt-24">
                 <div className="mt-10 relative w-100 h-100 mb-6 rounded-full bg-light-yellow flex items-center justify-center">
-                    <img src="/talk-close.png" alt="Chatbot Face" className="w-72 h-72" />
+                    <Image src="/talk-close.png" alt="Chatbot Face" className="w-72 h-72" />
                 </div>
                 <h1 className="text-4xl text-yellow font-extrabold mb-6">
-                    Enter text and press "Send" to hear it!
+                    Enter text and press &quot;Send&quot; to hear it!
                 </h1>
                 
                 {/* Input Field for Text
@@ -136,11 +138,11 @@ const Chatbot = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
                     <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
                         <h3 className="text-2xl font-bold mb-4">1. Record Your Voice</h3>
-                        <p>Press the record button and speak. I'll listen attentively.</p>
+                        <p>Press the record button and speak. I&apos;ll listen attentively.</p>
                     </div>
                     <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
                         <h3 className="text-2xl font-bold mb-4">2. Real-Time Responses</h3>
-                        <p>I'll analyze your speech and respond instantly for a smooth conversation.</p>
+                        <p>I&apos;ll analyze your speech and respond instantly for a smooth conversation.</p>
                     </div>
                     <div className="bg-light-yellow p-8 rounded-lg shadow-lg hover:bg-blue transition duration-300 text-dark-blue">
                         <h3 className="text-2xl font-bold mb-4">3. Personalization</h3>
